@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui" />
+
+	
+		<title>Sanghvisons login</title>
+		<meta name="description" content="Login to sanghvisons">
+		<meta name="robots" content="index, follow" />
+		<meta name="theme-color" content="#035b6c" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="Sanghvi & Sons" />
+		<meta property="og:title" content="Sanghvisons login" />
+		<meta property="og:description" content="Login to sanghvisons" />
+		<meta name="twitter:title" content="Sanghvisons login" />
+		<meta name="twitter:description" content="Login to sanghvisons" />
+		<meta name="p:domain_verify" content="70915a04c49ce4fffa044f1b19324176" />
+
+	
+	<!-- favicon icon -->
+	<link rel="shortcut icon" href="siteassets/images/landing_images/favicon.ico" type="image/x-icon">
+	<!-- Bootstrap min css -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Style css -->
+	<link href="assets/css/landingpage%EF%B9%96v=2.0.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/intlTelInput.min.css">
+	<!-- toastr-->
+	<link href="assets/css/toastr.min.css" rel="stylesheet">
+
+	<script type="text/javascript" src="siteassets/js/jquery-1.12.4.js"></script>
+	<script src="assets/js/toastr.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<style>#loader {
+			position: fixed;
+			top: 0%;
+			left: 0%;
+			right: 0%;
+			bottom: 0%;
+			z-index: 1000;
+		}
+
+		.loader-style {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 100vh;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+	</style>
+
+</head>
+
+<body>
+	<header class="py-2 border-bottom">
+		<div class="container-fluid">
+			<nav class="navbar navbar-expand-xl py-0">
+				<div class="container-fluid px-0">
+					<a class="navbar-brand" href="#">
+						<img src="siteassets/images/landing_images/logo.png" class="header-logo " alt="">
+					</a>
+					<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav header-menu-list">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                        </ul>
+                    </div> -->
+					<form class="d-flex align-items-center gap-3" role="search">
+						<div class="d-none d-xl-block">
+							<a href="contact.html" class="header-btn d-flex align-items-center gap-2">
+								<img src="siteassets/images/landing_images/contact.png" alt="">
+								Contact Us
+							</a>
+						</div>
+						<div class="d-none d-xl-block">
+							<a href="index.html" class="header-btn">
+								Home
+							</a>
+						</div>
+						<div class="d-xl-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+							<img src="siteassets/images/landing_images/hamburger.png" width="30px" height="30px" alt="">
+						</div>
+					</form>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Offcanvas sidebar start -->
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+			<div class="offcanvas-header border-bottom">
+				<h5 class="offcanvas-title" id="offcanvasRightLabel">
+					<img src="siteassets/images/landing_images/logo.png" class="header-logo " alt="">
+				</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav header-menu-list-sidebar">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">Bidding</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" aria-current="page" href="#">New Arrival</a>
+					</li>
+					<li class="nav-item d-flex align-items-center ps-2">
+						<p class="circle mb-0">0</p>
+						<a class="nav-link" aria-current="page" href="#">My Bidding</a>
+					</li>
+					<li class="nav-item d-flex align-items-center ps-2">
+						<p class="circle mb-0">0</p>
+						<a class="nav-link" aria-current="page" href="#">Wishlist</a>
+					</li>
+					<li class="nav-item d-flex align-items-center">
+						<a class="nav-link" aria-current="page" href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- Offcanvas Sidebar end -->
+	</header><section class="overflow-x-hidden">
+  <div class="container-fluid px-0">
+    <div class="row g-0 auth-main-row">
+      <!-- Auth banner start -->
+      <div class="col-12 col-lg-12 col-xl-8 col-xxl-8 bg-black calc-h">
+        <div class="auth-banner video-main border-light-bottom">
+          <video autoplay muted loop><source src="upload/dynamic_image/landing1.mp4" type="video/mp4" ></video>          <!-- <img src="upload/dynamic_image/landing1.mp4" alt=""> -->
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center px-4 py-4 auth-icons-list">
+          <div>
+            <p class="mb-2 mb-md-0 fw-400 fs-18 pb-3">Download our App</p>
+            <a href="https://apps.apple.com/vn/app/sanghvi-and-sons/id6477865340" target="_blank"><img src="siteassets/images/landing_images/apple.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/details?id=com.app.sanghavisons" target="_blank"><img src="siteassets/images/landing_images/android.png" alt=""></a>
+          </div>
+          <div>
+            <div class="gap-3">
+              <p class="mb-2 mb-md-0 fw-400 fs-18 pb-3">Connect with us</p>
+              <a href="https://www.facebook.com/sanghviandsons" target="_blank"><img src="siteassets/images/landing_images/facebook.png" alt=""></a>
+              <a href="https://www.instagram.com/sanghvisons/" target="_blank"><img src="siteassets/images/landing_images/instagram.png" alt=""></a>
+              <a href="#"><img src="siteassets/images/landing_images/twitter.png" alt=""></a>
+              <a href="https://youtube.com/@SanghviSons" target="_blank"><img src="siteassets/images/landing_images/youtube.png" alt=""></a>
+              <a href="https://www.linkedin.com/company/sanghvi-&amp;-sons/" target="_blank"> <img src="siteassets/images/landing_images/linked.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- Auth banner end -->
+      <div class="col-12 col-lg-12 col-xl-4 overflow-x-hidden overflow-y-auto">
+        <div class="row justify-content-center align-items-center h-100">
+          <div class="col-11">
+            <div class="d-flex justify-content-center">
+              <!-- Auth Logo -->
+              <a href="index.html"><img class="auth-logo" src="siteassets/images/landing_images/logo.png" alt=""></a>
+            </div>
+            <div align="center">
+              <script>
+                function form_error(field) {
+                  if (field === 'username') {
+                    return '';
+                  } else if (field === 'password') {
+                    return ; // No error
+                  }
+                }
+                if (form_error('username'))
+                  toastr.error(form_error('username'));
+                if (form_error('passwod'))
+                  toastr.error(form_error('username'));
+              </script>
+                          </div>
+            <div>
+              <h1 class="auth-title mb-4 mb-lg-5 mt-4">Welcome to Sanghvi & Sons </h1>
+              <div class="headline">
+                <p>Continue with</p>
+              </div>
+
+              <div class="overflow-auto">
+                <ul class="nav-pills auth-tab-bar mb-4 mt-2" id="pills-tab" role="tablist">
+                  <li class="nav-item w-100" role="presentation">
+                    <button class="nav-link active w-100" data-tab-id="3" id="pills-username-tab" data-bs-toggle="pill" data-bs-target="#pills-username" type="button" role="tab" aria-controls="pills-username" aria-selected="true">Username</button>
+                  </li>
+                  <li class="nav-item w-100" role="presentation">
+                    <button class="nav-link w-100" id="pills-Email-tab" data-tab-id="1" data-bs-toggle="pill" data-bs-target="#pills-Email" type="button" role="tab" aria-controls="pills-Email" aria-selected="false">Email</button>
+                  </li>
+                  <li class="nav-item w-100" role="presentation">
+                    <button class="nav-link w-100" id="pills-contact-tab" data-tab-id="2" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mobile Number</button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content pt-3" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-username" role="tabpanel" aria-labelledby="pills-username-tab" tabindex="0">
+                  <form id="loginForm" action="login.html" method="post" name="login_form">
+                    <div class="row g-3">
+                      <div class="col-12 mb-2">
+                        <div class="form-group">
+                          <input type="hidden" name="type" value="3">
+                          <div class="form-control d-flex align-items-center sm-border">
+                            <img src="siteassets/images/landing_images/username.png" alt="">
+                            <input type="text" class="form-control border-0" placeholder="Username" id="username" name="username" value="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 mb-2">
+                        <div class="form-group">
+                          <div class="form-control d-flex align-items-center sm-border">
+                            <img src="siteassets/images/landing_images/password.png" alt="">
+                            <input type="password" class="form-control border-0" placeholder="Password" id="login_password" name="password" value="" required>
+                            <img class="eye-icon" src="siteassets/images/landing_images/open-eye.svg" alt="" id="eye-icon" onclick="TogglePassword()">
+                          </div>
+                          <a href="forget.html" id="forgotPassword" class="text-end d-block mt-2">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="primary-btn w-100 mt-3">Login</button>
+                    <!-- <p class="mt-4 text-center fw-400 fs-6">Don’t have an account? <a href="register.html" class="fw-700 fs-6 text_primary text-decoration-none" id="registerNow">Register
+                        Now</a></p> -->
+                  </form>
+
+                </div>
+                <div class="tab-pane fade" id="pills-Email" role="tabpanel" aria-labelledby="pills-Email-tab" tabindex="0">
+                  <form id="loginForm" action="login.html" method="post" name="login_form">
+                    <div class="row">
+                      <div class="col-12 mb-3">
+                        <div class="form-group">
+                          <div class="form-control d-flex align-items-center sm-border">
+                            <img src="siteassets/images/landing_images/email.png" alt="">
+                            <input type="hidden" name="type" value="1">
+                            <input type="email" class="form-control border-0" placeholder="Email" id="email" name="username" value="" required>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="primary-btn w-100 mt-3">Login with OTP</button>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                  <form id="loginForm" action="login.html" method="post" name="login_form">
+                    <div class="row">
+                      <div class="col-12 mb-3">
+                        <div class="form-group">
+                          <input type="hidden" name="phone_code" title="" id="code">
+                          <input type="hidden" name="type" value="2">
+
+                          <input type="tel" class="form-control w-100 input-height" id="phoneInput" name="username" value="">
+                        </div>
+                      </div>
+                    </div>
+                    <button type="submit" class="primary-btn w-100 mt-3">Login with OTP</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <p class="mt-4 text-center fw-400 fs-6">Don't have an account? <a href="register.html" class="fw-700 fs-6 text_primary text-decoration-none" id="registerNow">Register
+                Now</a></p>
+            <p class="mt-4 text-center fw-400 fs-6">Don't have an account? <a href="register.html" class="fw-700 fs-6 text_primary text-decoration-none" id="broker_register">Register As Broker</a></p>
+            <div class="mt-5 d-none d-991-block">
+              <div class="d-md-flex justify-content-start align-items-center gap-3 mb-4">
+                <p class="mb-2 mb-md-0 fw-400 fs-18">Download our App</p>
+                <a href="https://apps.apple.com/vn/app/sanghvi-and-sons/id6477865340" target="_blank"><img src="siteassets/images/landing_images/apple.png" alt=""></a>
+                <a href="https://play.google.com/store/apps/details?id=com.app.sanghavisons" target="_blank"><img src="siteassets/images/landing_images/android.png" alt=""></a>
+              </div>
+              <div class="mb-5">
+                <div class="d-md-flex justify-content-start align-items-center gap-3">
+                  <p class="mb-2 mb-md-0 fw-400 fs-18">Connect with us</p>
+                  <a href="https://www.facebook.com/sanghviandsons" target="_blank"><img src="siteassets/images/landing_images/facebook.png" alt=""></a>
+                  <a href="https://www.instagram.com/sanghvisons/" target="_blank"><img src="siteassets/images/landing_images/instagram.png" alt=""></a>
+                  <a href="#"><img src="siteassets/images/landing_images/twitter.png" alt=""></a>
+                  <a href="https://youtube.com/@SanghviSons" target="_blank"><img src="siteassets/images/landing_images/youtube.png" alt=""></a>
+                  <a href="https://www.linkedin.com/company/sanghvi-&amp;-sons/" target="_blank"> <img src="siteassets/images/landing_images/linked.png" alt=""></a>
+                </div>
+              </div>
+            </div>
+            <div class="ccw_plugin chatbot c12">
+              <div class="ccw_style9 animated no-animation ccw-no-hover-an">
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=919326361716&amp;text=I%20am%20interested%20in%20your%20service%20contact%20me." class="img-icon-a nofocus" rel="noreferrer" title="whatsapp">
+                  <img class="img-icon ccw-analytics" id="style-9" data-ccw="style-9" style="height: 50px;" src="siteassets/ztech/img/whatsapp.svg" alt="WhatsApp chat" draggable="false">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script>
+  var base_url = "https://sanghvisons.com/";
+</script>
+
+
+<script src="assets/js/intlTelInput.min.js"></script>
+<script src="assets/js/utils.min.js"></script>
+
+<script>
+  function TogglePassword(params) {
+
+    var passwordInput = document.getElementById("login_password");
+    var eyeIcon = document.getElementById("eye-icon");
+    console.log(base_url);
+    if (passwordInput.type == "password") {
+      passwordInput.type = "text";
+      eyeIcon.src = base_url + "siteassets/images/landing_images/close-eye.png"; // Change to your close eye icon path
+    } else {
+      passwordInput.type = "password";
+      eyeIcon.src = base_url + "siteassets/images/landing_images/open-eye.svg"; // Change to your close eye icon path
+
+      // eyeIcon.src = "./asstes/images/png/open-eye.svg"; // Change to your open eye icon path
+    }
+
+  }
+  let digitValidate = function (ele) {
+    console.log(ele.value);
+    ele.value = ele.value.replace(/[^0-9]/g, '');
+  }
+
+  let tabChange = function (val) {
+    let ele = document.querySelectorAll('input');
+    if (ele[val - 1].value != '') {
+      ele[val].focus()
+    } else if (ele[val - 1].value == '') {
+      ele[val - 2].focus()
+    }
+  }
+
+  const phoneInput = document.querySelector("#phoneInput");
+  var codeInput = document.querySelector("#code");
+  // Initialize intlTelInput
+  const iti = window.intlTelInput(phoneInput, {
+    utilsScript: "assets/js/utils.min.js",
+    initialCountry: "IN"
+
+  });
+
+  // Set initial country based on the user's location
+  iti.promise.then(() => {
+    const countryCode = iti.getSelectedCountryData().iso2;
+    iti.setCountry(countryCode);
+  });
+
+  function getDefaultCountryData() {
+    // Get the selected country data
+    const countryCode = iti.getSelectedCountryData().dialCode;
+    codeInput.value = countryCode;
+
+    console.log("Selected country code:", countryCode);
+    //console.log("Selected Country Code:", countryCode);
+  }
+  getDefaultCountryData();
+  // Listen for the country change event
+  phoneInput.addEventListener("countrychange", function() {
+    const countryCode = iti.getSelectedCountryData().dialCode;
+    codeInput.value = countryCode;
+
+    console.log("Selected country code:", countryCode);
+
+  });
+  $("#broker_register").click(function(e) {
+    e.preventDefault(); // Prevent default link behavior
+    sessionStorage.setItem('is_broker', 1); // Set session storage
+    var href = $(this).attr('href');
+    window.location.href = href;
+  });
+  $("#registerNow").click(function(e) {
+    e.preventDefault(); // Prevent default link behavior
+    sessionStorage.setItem('is_broker', 0); // Set session storage
+    var href = $(this).attr('href');
+    window.location.href = href;
+  });
+
+</script>
+</body>
+
+</html>
